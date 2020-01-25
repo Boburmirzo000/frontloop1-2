@@ -95,6 +95,9 @@ body{
 .payment_card-link--active{
   color: #111;
 }
+.payment_card-link:hover{
+background-color: #ccc;
+}
 .payment_card-link--visa::before{
   display: block;
   width: 70px;
@@ -133,20 +136,22 @@ body{
 }
 .payment_card-button{
   position: relative;
-  display: flex;
   justify-content: center;
   width: 100%;
   padding: 20px;
   font-size: 14px;
   border: none;
-  text-decoration: none;
   font-weight: 500;
   text-transform: uppercase;
   background-color: #598bdd;
   color: #fff;
+  transform: translateY(0px);
+cursor: pointer;
+}
+.payment_card-button:active{
+  transform: translateY(5px);
 }
 .payment_card-button::after{
-  display: block;
   position: absolute;
   right: 130px;
   top: 18px;
